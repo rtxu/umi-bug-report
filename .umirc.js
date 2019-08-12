@@ -1,6 +1,6 @@
 
 export default {
-    plugins: [
+  plugins: [
     ['umi-plugin-react', {
       antd: true,
     }],
