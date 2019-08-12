@@ -1,2 +1,3 @@
 export * from './common';
-import {useDrag} from 'react-dnd';
+import { useDrag } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';

@@ -1,5 +1,5 @@
 module.exports = {
   transformIgnorePatterns: [
-    "node_modules/(?!(react-dnd|dnd-core)/)"
+    "<rootDir>/node_modules/(?!(react-dnd|dnd-core))"
   ]
 };
