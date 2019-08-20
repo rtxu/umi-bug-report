@@ -8,10 +8,13 @@ import 'react-resizable/css/styles.css'
 function ResizableItem({}) {
   const [width, setWidth] = useState(500);
   const handleResizeStart = (e, { size }) => {
-    e.stopPropagation()
+    // Based on my prior experience, e.stopPropagation() should be used to 
+    // prevent dragstart event from bubble.
+    // But my experiment result shows that e.preventDefault() is the right choice.
+    // NEED HELP. I DONOT KNOW WHY.
+    e.preventDefault()
   }
   const handleResize = (e, { size }) => {
-    e.stopPropagation()
     setWidth(size.width);
   }
 
